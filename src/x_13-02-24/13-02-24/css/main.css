@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+section.left-sidebar, section.right-sidebar{
+    width: 20%;
+    padding: 25px 10px;
+}
+
+section.left-sidebar{
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+section.left-sidebar ul.main-nav{
+    flex-grow: 1;
+}
+
+section.left-sidebar ul, section.right-sidebar ul{
+    list-style: none;
+    padding: 0px;
+}
+
+section.right-sidebar ul li{
+    margin-bottom: 10px;
+}
+
+section.right-sidebar ul li div.suggestion{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.right-sidebar ul li div.suggestion section{
+    padding: 5px;
+}
+
+
+section.right-sidebar ul li div.suggestion section:nth-child(2){
+    flex-grow: 1;
+}
+
+section.right-sidebar ul li div.suggestion section p{
+    padding: 0;
+    margin: 0;
+}
+
+section.right-sidebar ul li div.suggestion section p:last-child{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+section.right-sidebar ul li div.suggestion div.avatar{
+    background: url("https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+section.center-content{
+    flex-grow: 1;
+    padding: 25px 50px;
+    max-width: 50%;
+}
+
+section.center-content .stories ul{
+    list-style: none;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+section.center-content .stories ul li{
+    text-align: center;
+    display: inline-block;
+}
+
+section.center-content .stories ul li .avatar{
+    background: url("https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg");
+    background-size: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 5px solid rgba(0, 0, 0, 0.8);
+}
+
+section.center-content .stories ul li.unread .avatar{
+    border: 5px solid red;
+}
+
+section.center-content .stories ul li p{
+    padding: 0px;
+    margin: 5px;
+}
+
