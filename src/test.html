@@ -10,13 +10,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
+  <link href="./css/test-styles.css" rel="stylesheet">
   <style>
     /* Add custom styles here */
   </style>
   <!-- javascript -->
   <script src="js/main.js"></script>
 </head>
-<body onload = loadProductList()>
+<body>
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
@@ -36,7 +37,7 @@
             <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="test1.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -53,19 +54,27 @@
 
   <!-- Featured products -->
   <section class="featured-products py-5">
-    <div class="container">
-      <h2 class="mb-4">Featured Products</h2>
-      
+    <div class="wrapper">
+      <article class="item-info">
+        <h2>Featured Products</h2>
+        
+        <p>The perfect blend of cutting-edge features and affordability. Its sturdy frame allows a 140kg weight limit and has outstanding stability. It remains a compact design making it ideal for any living space, and storage. Like all our new Hit Fitness indoor exercise bikes it has a belt drive, allowing for a nearly silent ride in comparison to the old chain drive.\
+          With the 13 kg flywheel you get added comfort and fluidity to your workouts, allowing for smoother resistance shifting.</p>
+        <p>The G6 Pro can also track your workout and fitness journey via the display console which provides you real-time data on your time, calories burned and speed. \
+          For extra peace of mind, this bike also comes with a 1 year home warranty. So you can challenge yourself and know your bike has you covered.</p>
+      </article>
+      <img class="img-item" src="./image/Hit-Fitness-Weightlifting-Starter-Set-80kg-Standard-Squat-Rack_800x@2x.webp" alt="Product 1">
     </div>
     
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container text-center">
+  <section>
+    <div>
       <p>&copy; 2023 Fitness Store. All rights reserved.</p>
     </div>
-  </footer>
+
+  </section>
+
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

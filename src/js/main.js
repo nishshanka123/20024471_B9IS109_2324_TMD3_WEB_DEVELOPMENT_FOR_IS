@@ -379,7 +379,7 @@ var fitness_item_data = [
             <img src="`+fitness_item.media[0].url+`" alt="Product 1">
             <h3>`+fitness_item.product_name+`</h3>
             <h5>`+fitness_item.product_brand+`</h5>
-            <p>`+fitness_item.product_price+`</p><a href="./product.html?id=`+fitness_item.id+`">Details</a>
+            <p>`+fitness_item.product_price+`</p><a href="./test.html?id=`+fitness_item.id+`">Details</a>
           </div>`;
             document.querySelector(`.featured-products`).querySelector(`.container`).innerHTML = document.querySelector(`.featured-products`).querySelector(`.container`).innerHTML + product_element
         })
@@ -388,68 +388,50 @@ var fitness_item_data = [
 
     function showDetail() {
         var id = document.location.search.split("=")[1];
-        elem = `<p>data 1</p>`;
-        var product_data = "Product";
-        
-        fitness_item_data.forEach((fitness_item)=>{
-            elem = `<p>has</p>`;
-            
-            
-            if(fitness_item.id = id)
-            {
-                elem = elem + id;
-                elem = elem + `<img style="width: 100%; " src="image/1_Hit-Fitness-Indoor-Cycling-Bike-G6-Pro-01_800x@2x.webp">`;
-                product_data = product_data + `<div class = "product-main"><div class="main-data"><div class="main-data" style="width: 80%">`
-                                + `<img src="` +fitness_item.media[0].url+ `" class="card-img-top" alt="...">`+
-                                `<div class="main-text"><h5 class="product-title">`+ fitness_item.product_name+
-                                `</h5><p class="p-product-text">`+fitness_item.product_price+ `</p>` +                            
-                                `<!--a href="./product.html?id=`+fitness_item.id+ `" class="btn btn-primary">Details</a-->` +
-                                `</div class="d-product-info"><p class="product-info">`+fitness_item.produce_info+`</p>` +
-                                `</div></div>` + 
-                                `<div></div></div>`;
+        fitness_item_data.forEach((equipment)=>{
+            if (equipment.id == id) {
+                var product_element = `
+                <!-- Left Column /  Image -->
+                <div class="left-column">
+                    <img data-image="red" class="active" src="`+equipment.media[0].url+`" alt="">
+                </div>
+          
+          
+                <!-- Right Column -->
+                <div class="right-column">
+          
+                  <!-- Product Description -->
+                  <div class="product-description">
+                    <span>`+equipment.product_brand+`</span>
+                    <h1>`+equipment.product_name+`</h1>
+                    <p>`+equipment.produce_info+`</p>
+                    <p>`+equipment.produce_desc+`</p>
+                  </div>
+          
+                  <!-- Product Configuration -->
+                  <div class="product-configuration">
+          
+                    <div class="cable-config">
+                      <span>Features</span>
+                      
+                      <ul>
+                        <li>`+equipment.features.feature1+`</li>
+                        <li>`+equipment.features.feature2+`</li>
+                        <li>`+equipment.features.feature3+`</li>
+                    </ul>
+          
+                      <a href="#">How to improve your muscle</a>
+                    </div>
+                  </div>
+          
+                  <!-- Product Pricing -->
+                  <div class="product-price">
+                    <span>`+equipment.price+`</span>
+                    <a href="#" class="cart-btn">Add to cart</a>
+                  </div>
+                </div>
+                `;
+            document.querySelector(`.items`).innerHTML = document.querySelector(`.items`).innerHTML + product_element
             }
         })
-    
-        document.querySelector(`.products`).innerHTML = document.querySelector(`.products`).innerHTML + product_data
-    
-        /*fitness_item_data.forEach((fitness_item)=>{
-            if (fitness_item.id == "2") {
-                var el = `
-                <img style="width: 100%; " src="https://media.ed.edmunds-media.com/bmw/m4/2022/oem/2022_bmw_m4_coupe_competition_fq_oem_1_1600.jpg">
-                <p style="font: 1.2rem;">Hellow World</p> `;
-    
-                document.querySelector(`boxes`).innerHTML = document.querySelector(`boxes`).innerHTML + el;
-                document.querySelector('p.name').innerHTML = fitness_item.product_name;
-            }
-            else
-            {
-                var elem = `<h1>Element data</h1>`;
-                //elem = elem + `<p> item ID: ` + id + `</p>`;
-                //document.querySelector(`.products`).innerHTML = document.querySelector(`.products`).innerHTML + elem
-                fitness_item_data.forEach((fitness_item)=>{
-                    if(fitness_item.id == itme_id)
-                    {
-    
-                        var ele = `<div class="col">
-                            <div class="card" style="width: 12rem;">
-                                <img src="`+fitness_item.media[0].url+`" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title">`+fitness_item.product_name+`</h5>
-                                <p class="card-text">`+fitness_item.product_price+`</p>
-                                <a href="./product.html?id=`+fitness_item.id+`" class="btn btn-primary">Details</a>
-                                </div>
-                            </div>
-                        </div>`;
-                        document.querySelector(`.products`).innerHTML = document.querySelector(`.products`).innerHTML + elem
-                    }
-                        
-                    document.querySelector(`.products`).innerHTML = document.querySelector(`.products`).innerHTML + elem
-                })
-                //loadItemData(id);
-            }
-            else if (fitness_item.id == id) {
-                document.querySelector('p.name').innerHTML = fitness_item.product_name;
-                document.querySelector('p.name').innerHTML = document.querySelector('p.name').innerHTML
-            }
-        })*/
     }

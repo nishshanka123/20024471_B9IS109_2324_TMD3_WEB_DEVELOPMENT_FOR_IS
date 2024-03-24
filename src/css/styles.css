@@ -90,7 +90,8 @@ body {
   
   .product {
     display: inline-block;
-    margin-right: 20px;
+    padding: 10px 10px 10px;
+    margin: 20px;
   }
   
   .product img {
