@@ -86,11 +86,15 @@ body {
     #width: 80%;    
   }
 
-  
+  .mb-4 {
+    padding: 20px 50px;
+  }
   
   .product {
     display: inline-block;
-    margin-right: 20px;
+    max-width: 300px;
+    padding: 10px 10px 10px;
+    margin: 20px;
   }
   
   .product img {
@@ -134,10 +138,14 @@ body {
     margin: 0 auto; /* Center the page horizontally */
   }
   .container1 {
-    display: flex; /* Use flexbox */
+    width: 100%;
   }
-  .container1 .left-section, .right-section {
-    flex: 1; /* Occupy 50% of the container */
+  .container1 .left-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  .container1 .right-section {
     background-color: #f4f4f4;
     padding: 20px;
   }
@@ -155,6 +163,24 @@ body {
     cursor: pointer;
     font-size: 16px;
   }
+
+  @media only screen and (min-width: 1000px) {
+
+    .container1 {
+      display: flex; /* Use flexbox */
+    }
+    .container1 .left-section {
+      flex: 1; /* Occupy 50% of the container */
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+  
+    .container1 .right-section {
+      flex: 1; /* Occupy 50% of the container */
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+}
   
   .container1 .right-section {
     margin-left: 20px; /* Add some spacing between sections */
