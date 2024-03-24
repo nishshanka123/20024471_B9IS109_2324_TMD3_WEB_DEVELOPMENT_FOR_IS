@@ -304,6 +304,56 @@ var fitness_item_data = [
     },
     {
         "id" : "7",
+        "product_name" : "Adjustable Weight Bench",
+        "product_brand" : "Hit Fitness",
+        "product_price" : "138 €",
+        "produce_info" : "Customize your training experience with space saving and cost-effective adjustable dumbbells. Select from three weight options:",
+        "produce_desc" : "The Hit Fitness Adjustable Dumbbells & Weight Bench is the all-in-one fitness solution that was missing in your home gym. This comprehensive bundle includes an adjustable weight bench and a set of adjustable dumbbells, providing you with the versatility and quality you need to achieve your fitness goals.",
+        "features": {
+            "feature_1" : "High quality, high functioning semi-commercial machine",
+            "feature_2" : "Smooth rail system to fit all sizes",
+            "feature 3" : "Full-body workout",
+            "feature_4" : "Foldable function for easy storage",
+            "feature_5" : "Ergonomic seat & handlebar",
+            "feature_6" : "Features a tablet holder for up to 6.5",
+            "feature_7" : "Belt driven",
+            "feature_8" : "Easy assembly",
+            "feature_9" : "Low maintenance machine",
+            "feature_10" : "Low impact workout",
+        },
+        "spec" : {
+            "bike_type" : "Studio",
+            "Max User Weight" :	"140 kg",
+            "Dimensions" : "102 x 23 x 84.5 cm",
+            "Flywheel Weight" : "13 kg",
+            "Weight" : "34 kg",
+            "Drive_System" : "Belt",
+            "Resistance_System" : "Friction",
+            "Power" : "Self Generating",
+            "Console" : "LED Console, Time, Speed, Distance, Calories, Pulse",
+            "Resistance Levels" : "Adjustable",
+            "Programs" : "No",
+            "iFit" : "Not Included",
+            "Pulse" : "Yes - Handlebars",
+            "Adjustable Straps" : "Yes",
+            "Transport Wheels" : "Yes",
+            "Water Bottle Holder" : "Yes",
+            "Fan" : "No",
+            "Warranty" : "1 Yr Home Warranty"
+        },
+        "media": [
+            {
+                "url": "./image/Hit-Fitness-Adjustable-Dumbbell-Bench-Set_600x@2x.webp",
+                "type": "image"
+            },
+            {
+                "url": "some-video-url",
+                "type": "video"
+            }
+        ]
+    },
+    {
+        "id" : "8",
         "product_name" : "Weightlifting Starter Set",
         "product_brand" : "HIT FITNESS",
         "product_price" : "450 €",
@@ -351,57 +401,8 @@ var fitness_item_data = [
                 "type": "video"
             }
         ]
-    },
-    {
-        "id" : "8",
-        "product_name" : "Adjustable Weight Bench",
-        "product_brand" : "Hit Fitness",
-        "product_price" : "138 €",
-        "produce_info" : "Customize your training experience with space saving and cost-effective adjustable dumbbells. Select from three weight options:",
-        "produce_desc" : "The Hit Fitness Adjustable Dumbbells & Weight Bench is the all-in-one fitness solution that was missing in your home gym. This comprehensive bundle includes an adjustable weight bench and a set of adjustable dumbbells, providing you with the versatility and quality you need to achieve your fitness goals.",
-        "features": {
-            "feature_1" : "High quality, high functioning semi-commercial machine",
-            "feature_2" : "Smooth rail system to fit all sizes",
-            "feature 3" : "Full-body workout",
-            "feature_4" : "Foldable function for easy storage",
-            "feature_5" : "Ergonomic seat & handlebar",
-            "feature_6" : "Features a tablet holder for up to 6.5",
-            "feature_7" : "Belt driven",
-            "feature_8" : "Easy assembly",
-            "feature_9" : "Low maintenance machine",
-            "feature_10" : "Low impact workout",
-        },
-        "spec" : {
-            "bike_type" : "Studio",
-            "Max User Weight" :	"140 kg",
-            "Dimensions" : "102 x 23 x 84.5 cm",
-            "Flywheel Weight" : "13 kg",
-            "Weight" : "34 kg",
-            "Drive_System" : "Belt",
-            "Resistance_System" : "Friction",
-            "Power" : "Self Generating",
-            "Console" : "LED Console, Time, Speed, Distance, Calories, Pulse",
-            "Resistance Levels" : "Adjustable",
-            "Programs" : "No",
-            "iFit" : "Not Included",
-            "Pulse" : "Yes - Handlebars",
-            "Adjustable Straps" : "Yes",
-            "Transport Wheels" : "Yes",
-            "Water Bottle Holder" : "Yes",
-            "Fan" : "No",
-            "Warranty" : "1 Yr Home Warranty"
-        },
-        "media": [
-            {
-                "url": "./image/Hit-Fitness-Rowing-Machine-Foldaway-Air-_-Magnetic_800x@2x.webp",
-                "type": "image"
-            },
-            {
-                "url": "some-video-url",
-                "type": "video"
-            }
-        ]
     }
+    
     ];
 
     //function loadProductList
@@ -432,7 +433,6 @@ var fitness_item_data = [
                                 <div class="left-section">
                                     <img src="`+ fitness_item.media[0].url +`" alt="Product 1"><h3>`+ fitness_item.product_name +`</h3>
                                     <p>`+ fitness_item.produce_desc +`<br></p>
-                                    <a href="test1.html">Back to Store</a>
                                 </div>
                                 <div class="right-section">            
                                     <h3>Product Features</h3>
