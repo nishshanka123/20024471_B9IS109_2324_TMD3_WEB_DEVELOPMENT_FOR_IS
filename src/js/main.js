@@ -452,3 +452,4 @@ var fitness_item_data = [
                 document.querySelector('p.name').innerHTML = document.querySelector('p.name').innerHTML
             }
         })*/
+    }
