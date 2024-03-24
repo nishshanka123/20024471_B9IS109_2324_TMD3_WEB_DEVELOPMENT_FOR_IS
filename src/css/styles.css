@@ -86,11 +86,15 @@ body {
     #width: 80%;    
   }
 
-  
+  .mb-4 {
+    padding: 20px 50px;
+  }
   
   .product {
     display: inline-block;
-    margin-right: 20px;
+    max-width: 300px;
+    padding: 10px 10px 10px;
+    margin: 20px;
   }
   
   .product img {
@@ -128,6 +132,78 @@ body {
     background-color: #555;
   }
 
+  .page-wrapper {
+    width: 100%;
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center the page horizontally */
+  }
+  .container1 {
+    width: 100%;
+  }
+  .container1 .left-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  .container1 .right-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  .container1 .left-section img {
+    max-width:70%;
+    height:auto;
+  }
+
+  .container1 .left-section a {
+    background-color: #0e0af2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  @media only screen and (min-width: 1000px) {
+
+    .container1 {
+      display: flex; /* Use flexbox */
+    }
+    .container1 .left-section {
+      flex: 1; /* Occupy 50% of the container */
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+  
+    .container1 .right-section {
+      flex: 1; /* Occupy 50% of the container */
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+}
+  
+  .container1 .right-section {
+    margin-left: 20px; /* Add some spacing between sections */
+    background-color: #f4f4f4;
+  }
+
+  .container1 .right-section table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .container1 .right-section td, th {
+    border: 1px solid #d45050;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .container1 .right-section tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  
   
   /* Footer Styles */
   .footer {
