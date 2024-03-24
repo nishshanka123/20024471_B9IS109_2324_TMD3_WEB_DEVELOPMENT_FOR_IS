@@ -128,6 +128,56 @@ body {
     background-color: #555;
   }
 
+  .page-wrapper {
+    width: 100%;
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center the page horizontally */
+  }
+  .container1 {
+    display: flex; /* Use flexbox */
+  }
+  .container1 .left-section, .right-section {
+    flex: 1; /* Occupy 50% of the container */
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  .container1 .left-section img {
+    max-width:70%;
+    height:auto;
+  }
+
+  .container1 .left-section a {
+    background-color: #0e0af2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .container1 .right-section {
+    margin-left: 20px; /* Add some spacing between sections */
+    background-color: #f4f4f4;
+  }
+
+  .container1 .right-section table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .container1 .right-section td, th {
+    border: 1px solid #d45050;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .container1 .right-section tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  
   
   /* Footer Styles */
   .footer {
