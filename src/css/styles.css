@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Featured Products Styles */
+  .featured-products {
+    padding: 50px 0;
+  }
+
+  .featured-products .left {
+    background-color: #e5e5e5;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+    overflow:auto
+  }
+  
+  .featured-products .container{
+    #background-color: #c1d2d5;
+    #padding: 0 15px;
+    #float: left;
+    #width: 80%;    
+  }
+
+  
+  
+  .product {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .product img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .product h3 {
+    font-size: 24px;
+  }
+  
+  .product p {
+    margin-bottom: 20px;
+  }
+  
+  .product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .product a {
+    background-color: #0e0af2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .product button:hover {
+    background-color: #555;
+  }
+
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
