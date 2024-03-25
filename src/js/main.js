@@ -484,7 +484,7 @@ var fitness_item_data = [
                                         </tr>
                                     </table>
                                     <br>
-                                    <a href="test1.html">Back to Store</a>
+                                    <a href="index.html">Back to Store</a>
                             </div>`;
             }
         })
