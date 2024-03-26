@@ -118,6 +118,15 @@ body {
     cursor: pointer;
     font-size: 16px;
   }
+
+  .product a {
+    background-color: #0e0af2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+   }
   
   .product button:hover {
     background-color: #555;
