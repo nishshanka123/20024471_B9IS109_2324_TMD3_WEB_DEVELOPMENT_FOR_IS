@@ -155,6 +155,7 @@ body {
     font-size: 16px;
   }
 
+  /* get the screen size and handle page the responsiveness accordingly */
   @media only screen and (min-width: 1000px) {
 
     .container1 {
