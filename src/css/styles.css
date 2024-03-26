@@ -92,7 +92,7 @@ body {
   
   .product {
     display: inline-block;
-    max-width: 300px;
+    max-width: 260px;
     padding: 10px 10px 10px;
     margin: 20px;
   }
@@ -112,15 +112,6 @@ body {
   
   .product button {
     background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  .product a {
-    background-color: #0e0af2;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -197,6 +188,15 @@ body {
     border: 1px solid #d45050;
     text-align: left;
     padding: 8px;
+  }
+
+  .container1 .right-section a {
+    background-color: #0e0af2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
   }
   
   .container1 .right-section tr:nth-child(even) {
